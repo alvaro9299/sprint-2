@@ -1,0 +1,229 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+    min-height: 15vh;
+    background-color: rgb(204, 135, 135);
+    width: 100%;
+}
+    
+   
+.logo{
+    width: 100px;
+    object-fit: contain;
+}
+.divlogo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar{
+    height: 8vh;
+    padding: 40px,0px;
+    display: flex;
+}
+.navbar a{
+    text-decoration: none;
+    color: rgb(216, 47, 202);
+    background-color:rgb(250, 167, 250) ;
+    border-radius:10px;
+    cursor: pointer;
+    font-size: 15px;
+    border: 2px solid rgb(221, 13, 83);
+    margin: 10px;
+    padding: 9px;
+}
+.titulos{
+    text-align: center;
+}
+.titulo{
+   
+    font-size: 40px;
+}
+.subtitulo{
+    font-size: 30px;
+    color: rgb(243, 61, 91)
+}
+main{
+    min-height: 90vh;
+     background-color: rgb(241, 208, 208);
+}
+.ice{
+    padding: 30px;
+    text-align: center;
+}
+.ima1{
+    width: 100% ;
+    height: 200px;
+    border: 2px solid white;
+    object-fit: cover;
+}
+.ima2{
+    display: flex;
+    margin:  30px;
+    border: 2px solid white;
+    width: 300px;
+    height: 250px
+} 
+.texto{
+    display: flex;
+    width: 500px;
+    margin:50px 200px ;
+    font-size: 20px;
+}  
+.imatex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer{
+     min-height: 10vh;
+    background-color: rgb(230, 136, 136);
+}
+.final{
+    text-align: center;
+    color: aliceblue;
+    font-size: 20px;
+    padding: 15px;
+}
+/*2 PAGINA*/
+.ima03{
+    height: 200px;
+    width: 200px; 
+    border: 2px solid white;
+    display: flex;
+    object-fit: cover;
+    margin: 10px;
+}
+.tex03{
+    display: flex; 
+    font-size: 20px;
+    
+}
+.imatex03{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/*3 pagina*/
+.logo02{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo01{
+    display: flex;
+    width: 500px;
+}
+.textcontac{
+    display: flex;
+    font-size: 20px;
+}
+.contac{
+    display:flex ;
+    justify-content: space-around;
+}
+.cel{
+    display:flex;
+    margin: 20px 110px;
+}
+.email{
+    display: flex;
+    margin: 20px 100px;
+}
+/*4 pagina*/
+table,thead,tr,td,th{
+border: 1px solid black;
+font-family:Arial, Helvetica, sans-serif
+}
+.table{ 
+height: 100vh;
+width:100% ;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+table{
+    
+    text-align: center;
+    background-color: white;
+    width: 500px;
+    border-collapse: collapse;
+}
+td,th{
+    padding: 10px;
+    height: 100px;
+    width: 100px;
+}
+/*pagina 5*/
+.lista1{
+    width:1250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid white;
+    margin: 20px 50px;
+    background-color: rgb(230, 155, 155);
+} 
+.tex{
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    color: rgb(243, 61, 91)
+}
+.contene{
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
+h3{
+    font-size: 30px;
+}
+li{
+    font-size: 20px;
+}
+
+    
+
+    
+    
+    
+
+
+    
+    
+   
+   
+
+
+   
+   
+    
+    
+
+    
+
+
+
+
+
+
+
+    
+
+    
+
+
+
+
+
+
+    
+
+
+       
+    
