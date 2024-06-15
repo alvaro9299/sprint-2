@@ -89,6 +89,7 @@ footer{
     padding: 15px;
 }
 /*2 PAGINA*/
+
 .ima03{
     height: 200px;
     width: 200px; 
@@ -96,16 +97,22 @@ footer{
     display: flex;
     object-fit: cover;
     margin: 10px;
+    object-fit: cover;
+    
+
+    
 }
 .tex03{
     display: flex; 
     font-size: 20px;
+    margin:10px 100px;
+    width: 400px;
     
 }
 .imatex03{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 /*3 pagina*/
 .logo02{
@@ -169,17 +176,24 @@ td,th{
     margin: 20px 50px;
     background-color: rgb(230, 155, 155);
 } 
+.imag{
+    margin-right: 100px;
+}
+  
+    
 .tex{
+
+
     font-size: 30px;
     text-align: center;
     padding: 20px;
     color: rgb(243, 61, 91)
 }
-.contene{
-    display: flex;
-    justify-content: center;
-    margin: 100px;
-}
+.list{
+    width: 500px;
+}    
+    
+
 h3{
     font-size: 30px;
 }
