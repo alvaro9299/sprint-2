@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNOWY CREAM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./asset/icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="divlogo">
+            <nav class="navbar">
+                <a href="./index.html">home</a>
+                <a href="./about.html">about</a>
+                <a href="./contact.html">contact</a>
+                <a href="./information.html">information</a>
+                <a href="./benefits.html">benefits</a>
+                <a href="./raffle.html">raffle</a>
+            </nav>
+            <img class="logo" src="./asset/logo.png" alt="">
+        </div>
+    </header>
+    <main>
+
+
+        <div class="titulos">
+            <h1 class="titulo"> RAFFLE </h1>
+            <h2 class="subtitulo"> YOU CAN COLLABORATE TO HOLD AN EXHIBITION EVENT AND PARTICIPATE IN A RAFFLE
+                TO WIN AN EASEL </h2>
+        </div>
+
+        <div class="todo">
+            <div class="mapa">
+                <p class="text"> Our location is located at:</p>
+
+                <div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52898.33470701586!2d-118.28957129085433!3d34.04012785423128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c634253dfd01%3A0x26fe52df19a5a920!2sCentro%20de%20Los%20%C3%81ngeles%2C%20Los%20%C3%81ngeles%2C%20California%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sco!4v1718433873377!5m2!1ses-419!2sco"
+                        width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </div>
+            <div class="raf">
+                <form action="./show_data.html">
+
+                    <div>
+                        <p class="text">First Name</p>
+                        <label>
+                            <input class="selec" type="text" name="name" id="name" placeholder="your name"
+                                required>
+                        </label>
+                    </div>
+                    <div>
+                        <p class="text">Last Name</p>
+                        <label>
+                            <input class="selec" type="text" name="lastname" id="lastname" placeholder="your lastname"
+                                required>
+                        </label>
+                    </div>
+                    <div>
+                        <p class="text">Choose Meet or Zoom</p>
+                        <label>
+                            <select class="selec" name="select">
+                                <option value="Met">Meet</option>
+                                <option value="Zom">Zoom</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div>
+                        <p class="text">Choose Date</p>
+                        <label>
+                            <input class="selec" type="date" name="date" id="date" value="2024-01-01">
+                        </label>
+                    </div>
+
+
+
+                    <div class="pagar">
+                        <p class="text">Payment Options</p>
+                        <div class="pago">
+                            <p>Cash</p>
+                            <label>
+                                <input type="radio" name="name" id="cash" value="Cash" required>
+                            </label>
+                        </div>
+                        <div class="pago">
+                            <p> Credit card</p>
+                            <label>
+                                <input type="radio" name="name" id="credtcard" value="creditcard" required>
+                            </label>
+                        </div>
+
+                        <div class="pago">
+                            <p> Debit card</p>
+                            <label>
+                                <input type="radio" name="name" id="debitcard" value="debitcard" required>
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text">Message(optional)</p>
+                        <label>
+                            <textarea cols="50" rows="10" id="message(optional)" placeholder="your message"></textarea>
+                        </label>
+                    </div>
+
+
+
+                    <div class="sumit">
+                        <p>I accept terms and conditions...</p>
+                        <label class="cheq">
+                            <input type="checkbox" name="confirm" id="cheq" required value="pago">
+                        </label>
+                        <button>submit</button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+
+    <footer>
+        <p class="final">Created By: Alvaro Alvarez</p>
+    </footer>
+</body>
+
+</html>
