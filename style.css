@@ -114,8 +114,8 @@ header,footer{
     }
     .navbar{
         height: 8vh;
-        padding: 40px,0px;
         flex-direction: row;
+        
     }
     .navbar a{
         width: 70px;
