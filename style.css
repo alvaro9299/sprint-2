@@ -3,56 +3,71 @@
     padding: 0px;
     box-sizing: border-box;
 }
-header{
-    min-height: 15vh;
-    background-color: rgb(204, 135, 135);
-    width: 100%;
+html{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-    
-   
+.structure{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 .logo{
+    display: flex;
     width: 100px;
     object-fit: contain;
 }
 .divlogo{
+    min-width: 100%;
+    min-height: 15vh;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column-reverse;
     align-items: center;
+   
 }
+
 .navbar{
-    height: 8vh;
-    padding: 40px,0px;
+    padding: 5px;
     display: flex;
+    flex-direction: column;
 }
+   
 .navbar a{
     text-decoration: none;
     color: rgb(216, 47, 202);
     background-color:rgb(250, 167, 250) ;
     border-radius:10px;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 12px;
     border: 2px solid rgb(221, 13, 83);
-    margin: 10px;
-    padding: 9px;
+    margin: 2px;
+    padding: 3px;
+    text-align: center;
+    width: 70px;
 }
 .titulos{
     text-align: center;
 }
 .titulo{
-   
-    font-size: 40px;
+    font-size: 30px;
 }
 .subtitulo{
-    font-size: 30px;
+    font-size: 20px;
     color: rgb(243, 61, 91)
 }
+@media(min-width:768px){
+    .titulo{
+        font-size: 40px;
+    }
+    .subtitulo{
+        font-size: 30px;
+    }    
+}
 main{
-    min-height: 90vh;
+    min-height: 80vh;
      background-color: rgb(241, 208, 208);
 }
 .ice{
-    padding: 30px;
-    text-align: center;
+    padding: 5px;
 }
 .ima1{
     width: 100% ;
@@ -62,23 +77,25 @@ main{
 }
 .ima2{
     display: flex;
-    margin:  30px;
+    margin: 10px 50px;
     border: 2px solid white;
-    width: 300px;
-    height: 250px
+    width: 200px;
+    height: 150px
 } 
 .texto{
     display: flex;
-    width: 500px;
-    margin:50px 200px ;
+    text-align: center;
     font-size: 20px;
+    margin:15px;
+    width: 300px;
 }  
 .imatex{
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
 }
-footer{
+header,footer{
      min-height: 10vh;
     background-color: rgb(230, 136, 136);
 }
@@ -88,8 +105,44 @@ footer{
     font-size: 20px;
     padding: 15px;
 }
-/*2 PAGINA*/
+@media (min-width :768px) {
+    .divlogo{
+       flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+    .navbar{
+        height: 8vh;
+        padding: 40px,0px;
+        flex-direction: row;
+    }
+    .navbar a{
+        width: 70px;
+    }
+    .imatex{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .ima2{
+         margin: 10px 5px;
+    }
+    .texto{
+        margin: 10px 100px;
+    }
+}
+    @media(min-width:1024px){
+        .texto{
+            margin: 10px 300px;
+        }  
+        .ima2{
+            width: 300px;
+            height: 200px;
+        }    
 
+}
+
+/*2 PAGINA*/
 .ima03{
     height: 200px;
     width: 200px; 
@@ -98,49 +151,73 @@ footer{
     object-fit: cover;
     margin: 10px;
     object-fit: cover;
-    
-
-    
 }
 .tex03{
     display: flex; 
-    font-size: 20px;
+    font-size: 15px;
     margin:10px 100px;
-    width: 400px;
-    
+    width: 300px;
+    text-align: center;
 }
 .imatex03{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+@media(min-width:768px){
+    .imatex03{
+        flex-direction: row;
+    }  
+    .tex03{
+        width: 400px;
+        margin: 20px 40px;
+        font-size: 20px;
+    }    
+    .ima03{
+        margin:20px 50px;
+    }
+    
+}
 /*3 pagina*/
+.logo01{
+    display: flex;
+    width: 400px;
+}
 .logo02{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.logo01{
-    display: flex;
-    width: 500px;
-}
 .textcontac{
+    text-align: center;
     display: flex;
     font-size: 20px;
+    width: 300px;
+    margin: 10px;
 }
 .contac{
     display:flex ;
-    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
 }
-.cel{
-    display:flex;
-    margin: 20px 110px;
+@media(min-width:768px){
+    .logo01{
+        width: 500px;
+    }
+    .textcontac{
+        width: 500px;
+        text-align: center;
+    }
+    .contac{
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px;
+    }
 }
-.email{
-    display: flex;
-    margin: 20px 100px;
-}
+    
 /*4 pagina*/
 table,thead,tr,td,th{
 border: 1px solid black;
@@ -155,150 +232,229 @@ justify-content: center;
 align-items: center;
 }
 table{
-    
     text-align: center;
     background-color: white;
-    width: 500px;
+    width: 90%;
     border-collapse: collapse;
 }
-td,th{
-    padding: 10px;
+td,th,tr{
     height: 100px;
     width: 100px;
 }
+@media(min-width:768px){
+    table{
+        width:500px;
+    }
+}
 /*pagina 5*/
-.lista1{
-    width:1250px;
+section{
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+   
+}
+.lista1{
+    width:90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     border: 1px solid white;
-    margin: 20px 50px;
+    margin: 20px;
     background-color: rgb(230, 155, 155);
 } 
-.imag{
-    margin-right: 100px;
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    text-align:left;
+    margin: 10px;
+}    
+
+article  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
 }
-  
-    
 .tex{
-
-
+   text-align: center;
     font-size: 30px;
-    text-align: center;
-    padding: 20px;
+    width: 300px;
     color: rgb(243, 61, 91)
 }
-.list{
-    width: 500px;
-}    
-    
-
 h3{
-    font-size: 30px;
-}
-li{
     font-size: 20px;
 }
+li{
+    font-size: 15px;
+    
+}
+@media(min-width:768px){
+    
+    .lista1{
+        flex-direction: row;
+    } 
+    .tex{
+        width: 400px;
+    } 
+   
+}
+@media(min-width:1024px){
+    .lista1{
+        justify-content: space-around;
+    }
+    h3{
+        font-size: 30px;
+    }
+    li{
+        font-size: 20px;
+    }
+}
+
+
 /*pagina 6*/
 form{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
     padding:2rem;
+    margin: 10px;
     border-radius: 2rem;
-    
+    background-color:rgb(230, 155, 155) ;
+    width: 90%;
+    height: 100vh;
 }
-
 .raf{
     display: flex;
-    
-    align-items: end;
+    align-items: center;
     flex-direction: column;
-    
-    
-    
+    justify-content: center;
 }   
+.selec{
+    width: 200px;
+    height: 20px;
+}    
+    
 
 .pago{
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
 }
-    
+.field{
+    display: flex;
+    border: none;
+    font-size:15px ;
+    flex-direction: column;
+}
 .text{
-
-    font-size:25px ;
+    font-size:15px ;
 }
 .cheq{
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
-    
+    gap: 5px;
 }
 .sumit{
     display: flex;
     justify-content: space-between;
+    border: none;
 }
+.textar{
+    border: none;
+}   
 .pagar{
     display: flex;
     flex-direction: column;
-   
+    border: none;
 }
-    
-.selec{
-    width: 385px;
-    height: 30px;
+iframe{
+    width: 300px;
+    height: 40vh;
 }
 .mapa{
     display: flex;
     flex-direction: column;
-    padding: 0 200px;
     align-items: center;
     justify-content: center;
-    
-   
-}.todo{
-    display: flex;
-    justify-content: space-between;
-   
 }
+.todo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media(min-width:768px){
+    .todo{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-left: 20px;
+    }
+}
+@media(min-width:1024px){
+.todo{
+    justify-content: space-around;
+}
+}
+    
+    
+
+   
+    
+
+
+
+    
+   
+
+   
+    
+    
+
+  
+    
+
+
+    
+
+    
+    
 
     
     
     
 
+    
+
+
+    
+
+
+   
+    
+    
+
+
+    
+    
+
+    
+
+    
+    
+    
 
     
     
    
    
-
-
    
-   
-    
-    
-
-    
-
-
-
-
-
-
-
-    
-
-    
-
-
-
-
-
-
-    
-
-
-       
-    
